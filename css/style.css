@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+.topbar {
+    background: white;
+    min-height: 80px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8ebf0;
+}
+
+.school-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.school-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #eef4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.school-brand h1 {
+    font-size: 18px;
+    color: #172554;
+}
+
+.school-brand p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+/* Buttons */
+
+.login-button,
+.primary-button {
+    background: #2563eb;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.login-button:hover,
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.secondary-button {
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+/* Hero */
+
+.hero {
+    max-width: 1150px;
+    margin: 70px auto;
+    padding: 0 25px;
+
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: #eaf2ff;
+    color: #2563eb;
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.4;
+    color: #172554;
+    margin-bottom: 18px;
+}
+
+.hero-text > p {
+    color: #64748b;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+
+/* Hero Card */
+
+.hero-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(30, 41, 59, 0.08);
+    text-align: center;
+}
+
+.card-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+
+    background: #eef4ff;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+.hero-card h3 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Forms */
+
+.forms-section {
+    background: white;
+    padding: 70px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #2563eb;
+    font-size: 13px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    color: #172554;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.forms-grid {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.empty-forms {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 18px;
+
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.empty-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.empty-forms h3 {
+    color: #334155;
+}
+
+.empty-forms p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .topbar {
+        padding: 12px 18px;
+    }
+
+    .school-brand p {
+        display: none;
+    }
+
+    .login-button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        margin: 40px auto;
+        gap: 35px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero-text > p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        text-align: center;
+        width: 100%;
+    }
+
+    .forms-section {
+        padding: 50px 20px;
+    }
+
+}
